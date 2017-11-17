@@ -1,3 +1,29 @@
-hi ben
-dfadfadfadfadfa
-hi rebeca
+// Benjamin J Griggs & 
+// 326254 /
+//Comms Majors
+
+#include <iostream>
+
+//Beginning of Prototypes
+bool ERRORCHECK();
+void SYSPAUSE();
+//End of Prototypes
+
+bool ERRORCHECK() //Checking for wrong imputs for var types
+	{
+		if (std::cin.fail())
+			{
+				std::cout << "Error, not a vaild imput" << std::endl;
+				std::cin.clear();
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				SYSPAUSE();
+				return true;
+			}
+		return false;
+	}
+
+void SYSPAUSE() //Instead of using system("pause") use this, better habbits
+	{
+		std::cout << "Press Enter to contunue..." << std::endl;
+		std::cin.get();
+	}
