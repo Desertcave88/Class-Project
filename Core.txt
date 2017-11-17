@@ -1,6 +1,6 @@
-// Benjamin J Griggs & 
-// 326254 /
-//Comms Majors
+// Benjamin J Griggs & Rebeca Benitez-Avila
+// 326254 / 388564
+//Comms Major / Engineer Major
 
 #include <iostream>
 
